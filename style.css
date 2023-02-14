@@ -1,0 +1,276 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@300&family=Roboto+Slab:wght@300&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #605399;
+}
+
+p,
+h2,
+button {
+    font-family: 'Roboto Condensed';
+}
+
+input {
+    outline: none;
+    width: 14rem;
+    height: 2rem;
+    padding: 0.5rem;
+    color: aliceblue;
+}
+
+input::placeholder {
+    color: aliceblue;
+    opacity: 0.6;
+}
+
+nav {
+    z-index: 1;
+    padding: 1rem 5rem;
+    background-color: transparent
+}
+
+.header-cart img {
+    width: 24rem;
+    height: 24rem;
+    border-radius: 6px;
+}
+
+.header-cart {
+    padding: 1rem;
+    width: 26rem;
+    height: fit-content;
+}
+
+
+/* buttons */
+
+.btn-morph {
+    color: aliceblue;
+    font-size: 1rem;
+    padding: 0.5rem 1rem;
+    border: 1px solid #fff !important;
+}
+
+.btn-morph:hover {
+    background: rgba( 255, 255, 255, 0.5);
+}
+
+.btn-gradient {
+    font-size: 1rem;
+    width: fit-content;
+    border: none;
+    color: aliceblue;
+    padding: 0.7rem 1.5rem;
+    border-radius: 0.7rem;
+    background: transparent;
+    border: 1px solid #fff;
+}
+
+.btn-gradient:hover {
+    border: 1px solid transparent;
+    background: rgb(255, 208, 241);
+    background: linear-gradient(75deg, rgba(255, 208, 241, 1) 0%, rgba(235, 0, 255, 1) 75%);
+}
+
+.cross-gradient {
+    width: 35%;
+    height: 100vh;
+    background-image: url(./images/mesh-636.png);
+    background-size: cover;
+    float: right;
+    border-radius: 0 0 0 1rem;
+    z-index: -1;
+}
+
+.site-title {
+    width: 50%;
+    height: 50%;
+}
+
+.site-title h1 {
+    font-size: 8rem;
+}
+
+
+/* responsive */
+
+
+/* larg screens */
+
+@media only screen and (max-width:1200px) {}
+
+
+/* lap top */
+
+@media only screen and (max-width:992) {}
+
+
+/* tablet */
+
+@media only screen and (max-width:768px) {
+    .btn-morph {
+        display: none;
+    }
+    input {
+        display: none;
+    }
+    .cross-gradient {
+        width: 100%;
+        height: 50vh;
+        background-image: url(./images/mesh-636.png);
+        background-size: cover;
+        float: right;
+        border-radius: 0 0 1rem 1rem;
+        z-index: -1;
+    }
+    .header-cart img {
+        width: 22rem;
+        height: 22rem;
+        border-radius: 6px;
+    }
+    .header-cart {
+        padding: 1rem;
+        width: 24rem;
+    }
+    .site-title h1 {
+        font-size: 5rem;
+    }
+    .head {
+        flex-wrap: wrap-reverse;
+    }
+}
+
+
+/* mobile */
+
+@media only screen and (max-width:600px) {}
+
+
+/* utilities */
+
+
+/* margin */
+
+.mx-1 {
+    margin: 0 0.5rem;
+}
+
+.mx-2 {
+    margin: 0 1rem;
+}
+
+.mt-1 {
+    margin-top: 0.5rem;
+}
+
+.mt-2 {
+    margin-top: 1rem;
+}
+
+.ml-1 {
+    margin-left: 0.5rem;
+}
+
+.ml-2 {
+    margin-left: 1rem;
+}
+
+
+/* text */
+
+.text-white {
+    color: aliceblue;
+}
+
+.text-bold {
+    font-weight: 900;
+}
+
+.text-small {
+    font-size: small;
+}
+
+
+/* flex box */
+
+.flex {
+    display: flex;
+}
+
+.flex-column {
+    flex-direction: column;
+}
+
+.justify-content-center {
+    justify-content: center;
+}
+
+.justify-content-between {
+    justify-content: space-between;
+}
+
+.align-items-center {
+    align-items: center;
+}
+
+.align-self-start {
+    align-self: flex-start;
+}
+
+.align-self-end {
+    align-self: flex-end;
+}
+
+.flex-wrap {
+    flex-wrap: wrap-reverse;
+}
+
+
+/* posision */
+
+.item-right {
+    position: absolute;
+    right: 0;
+    top: 0;
+}
+
+.item-left {
+    position: absolute;
+    left: 0;
+    top: 0;
+}
+
+
+/* style */
+
+.glassmorphism {
+    background: rgba( 255, 255, 255, 0.4);
+    box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37);
+    backdrop-filter: blur( 4px);
+    -webkit-backdrop-filter: blur( 4px);
+    border-radius: 6px;
+    border: 1px solid rgba( 255, 255, 255, 0.18);
+}
+
+
+/* width */
+
+.width-100 {
+    width: 100%;
+}
+
+
+/* fonts */
+
+.font-family-roboto-slab {
+    font-family: 'Roboto Slab';
+}
+
+.font-family-roboto-condensed {
+    font-family: 'Roboto Condensed';
+}
